@@ -1,0 +1,49 @@
+// Get a price
+GET http://localhost:8080/coin/price/v1/BTC-USD
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-17T114940.200.json
+<> 2019-07-17T114848.200.json
+<> 2019-07-17T113247.200.json
+
+###
+
+// Create a purchase
+POST http://localhost:8080/coin/purchase/v1/BTC-USD
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-17T114949.200.json
+
+###
+
+// Create a second purchase
+POST http://localhost:8080/coin/purchase/v1/ETH-USD
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-17T115001.200.json
+
+###
+
+// Get all stored purchases
+GET http://localhost:8080/coin/purchase/v1/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-17T115008.200.json
+<> 2019-07-17T113122.200.json
+
+###
+
+// Get a specific stored purchases (change the ID below)
+
+GET http://localhost:8080/coin/purchase/v1/5d2eec46815f2c0870b40836
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-17T115036.200.json
+
+###
+
